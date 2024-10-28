@@ -1,148 +1,169 @@
 body {
-font-family: Arial;
-line-height: 1.5;
-margin: 0;
-padding: 0;
-background: #eee;
-color: #222;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #222;
 }
 
 header {
-background: #4CAF50;
-color: white;
-padding: 15px;
-text-align: center;
+    background: #0a0e0b;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
 h1, h2, h3 {
-margin: 0;
+    margin: 0;
 }
 
 h1 {
-font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 h2 {
-font-size: 2em;
+    font-size: 2em;
 }
 
 h3 {
-font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 nav {
-background: #333;
-padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 200px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
 }
 
 nav ul {
-list-style: none;
-padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-display: inline;
-margin: 0 10px;
+    margin: 15px 0;
 }
 
 nav a {
-color: white;
-text-decoration: none;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
 }
 
 nav a:hover {
-text-decoration: underline;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
 }
 
 main {
-padding: 20px;
+    margin-left: 220px; /* Leave space for the fixed nav */
+    padding: 20px;
 }
 
 section {
-margin-bottom: 20px;
-background: white;
-padding: 15px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 img {
-max-width: 100%;
+    max-width: 100%;
 }
 
 form {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 input[type="text"], input[type="email"], textarea {
-padding: 8px;
-margin-bottom: 10px;
-border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 
 button {
-background: #4CAF50;
-color: white;
-padding: 10px;
-border: none;
-cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-background: #45a049;
+    background: #45a049;
 }
 
 footer {
-text-align: center;
-padding: 10px;
-background: #4CAF50;
-color: white;
+    text-align: center;
+    padding: 10px;
+    background: #030603;
+    color: white;
 }
 
 .gallery {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .gallery-item {
-width: 30%;
-margin: 10px;
+    width: 30%;
+    margin: 10px;
 }
 
 .gallery-item img {
-width: 100%;
+    width: 100%;
 }
 
 .gallery-item p {
-padding: 5px;
+    padding: 5px;
 }
 
 @media (max-width: 768px) {
-nav ul li {
-display: block;
-margin: 5px 0;
-}
+    nav {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+    
+    main {
+        margin-left: 0;
+    }
 
-.gallery-item {
-width: 45%;
-}
+    .gallery-item {
+        width: 45%;
+    }
 }
 
 @media (max-width: 480px) {
-.gallery-item {
-width: 100%;
+    .gallery-item {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
 
-h1 {
-font-size: 1.8em;
-}
-
-h2 {
-font-size: 1.2em;
-}
-}
 
